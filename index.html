@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat Ulang Tahun, Sayang!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="container">
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="berdua.jpg" alt="Foto Pacar" />
+            <h1>Selamat Ulang Tahun, Sayang! 🎉</h1>
+          </div>
+          <div class="card-back">
+            <p id="message"></p>
+            <div class="controls">
+              <button onclick="typeWriter()">🔁 Ulang Pesan</button>
+              <button onclick="toggleMusic()">🎵 Putar Musik</button>
+              <button onclick="fullscreen()">📱 Fullscreen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+      <source src="id-331322.mp3" type="audio/mp3" />
+    </audio>
+
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 40 },
+          shape: { type: "image", image: { src: "https://i.imgur.com/MYzUJz3.png", width: 20, height: 20 } },
+          size: { value: 15 },
+          move: { speed: 1 },
+          opacity: { value: 0.8 },
+        },
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
